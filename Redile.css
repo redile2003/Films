@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+   background: black;
+}
+#div1{
+	display: flex;
+	background: linear-gradient(to right, purple, #CC8899);
+}
+#ul1{
+	display: flex;
+}
+.li1{
+	display: flex;
+	float: left;
+	list-style: none;
+}
+.li1 a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 15px 30px;
+}
+.li1 a:hover{
+	background: white;
+	color: green;
+	border: 1px solid green;
+	transition: .8s;
+}
+
+#anadiv{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 2px;
+}
+.divler{
+	display: inline-block;
+	margin: 0;
+	padding: 1px;
+}
+#div2{
+	width: 30%;
+	background: #CA7879;
+	position: absolute;
+}
+#div2 span{
+	color: deepskyblue;
+	padding: 2px;
+	margin: 2px;
+}
+#div2 span:hover{
+	color: white;
+}
+#div2 .span1{
+	display: inline-block;
+	width: 7%;
+}
+#div2 .span2{
+	display: inline-block;
+	width: 40%;
+}
+#div2 .span2:hover{
+	cursor: pointer;
+}
+#div3{
+	width: 50%;
+	background: #CB7090;
+	position: absolute;
+	left: 30%;
+}
+#div3 div{
+	display: inline-block;
+	width: 30%;
+	margin: 7px;
+	overflow: hidden;
+}
+#div3 div img{
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 5px 1px 5px 1px lightgray;
+}
+#div3 div img:hover{
+	cursor: pointer;
+	transition: 1s ease;
+	transform: scale(1.2);
+}
+#div3 div p{
+	position: relative;
+	color: white;
+	z-index: 5;
+	top: 100px;
+	left: 20px;
+}
+#div3 div .p_i{
+	color: yellow;
+	margin-top: 3px;
+	font-weight: 900;
+}
+#div4{
+	width: 20%;
+	background: #CC7099;
+	position: absolute;
+	left: 80%;
+}
+#div4 div{
+	width: 100%;
+}
+#div4 div img{
+	width: 100%;
+	border-radius: 7px;
+}
+
+
+
+@media (max-width: 550px){
+	#div1{
+		margin: 0;
+		padding: 0;
+		display: block;
+		z-index: 2;
+	}
+	#div1 #ul1{
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+	#div1 #ul1 .li1{
+		margin: 0;
+		padding: 0;
+		display: block;
+		background: yellow;
+		width: 100%;
+	}
+	#div1 #ul1 .li1 a{
+		margin: 0;
+		padding: 8px;
+		display: inline-block;
+		width: 100%;
+		background: white;
+		color: black;
+		font-size: 15px;
+	}
+	#anadiv{
+		position: absolute;
+		top: 100px;
+		margin-top: 35px;
+		z-index: -3;
+	}
+	#div2, #div3, #div4{
+		position: absolute;
+		left: 0;
+    	display: block;
+    	width: 100%;
+	}
+	#div2{
+		top: 210rem;
+		z-index: 10;
+	}
+	#div2 .span2{
+		width: 65%;
+	}
+	#div3 div{
+		width: 100%;
+	}
+	#div3 div img{
+		margin: 1% 10%;
+		width: 80%;
+	}
+	#div3 div img:hover{
+	   cursor: pointer;
+	   transform: scale(1.0);
+   }
+   #div3 div p{
+   	font-size: 1.5rem;
+	   top: 150px;
+	   left: 150px;
+   }
+	#div4{
+		top: 250rem;
+	}
+	#div4 div img{
+		margin: 1% 10%;
+		width: 80%;
+	}
+}
